@@ -23,7 +23,8 @@ def format_labels(option):
     return option
 
 
-model_names = ["random_forest", "svm", "knn"]
+model_names = ["decision_tree", "random_forest", "bagging", "naive_bayes", "svm", "logistic_regression", "knn",
+               "xgboost", "ridge"]
 model_option = st.selectbox(
     'What model do you want to use ?',
     model_names,
@@ -33,7 +34,7 @@ model_option = st.selectbox(
 absolute_path = os.path.dirname(__file__)
 
 
-@st.cache_data
+@st.cache_resource
 def load_labels():
     labelsPath = absolute_path + "/labels.txt"
     labels = {}
@@ -47,7 +48,7 @@ def load_labels():
     return labels
 
 
-@st.cache_data
+@st.cache_resource
 def load_models():
     models = {}
 
