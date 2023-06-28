@@ -1,7 +1,6 @@
 import os.path
 import pickle
 import warnings
-import xgboost
 import av
 import cv2
 import mediapipe as mp
@@ -53,8 +52,11 @@ def load_models():
 
     for model_name in model_names:
         model_path = absolute_path + '/' + model_name + '.pkl'
-        model = pickle.load(open(model_path, 'rb'))['model']
-        models[model_name] = model
+
+        with open(model_path, 'rb') as file:
+            pickles = pickle.load(file)
+
+        models[model_name] = pickles['model']
 
     return models
 
