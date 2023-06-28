@@ -23,8 +23,7 @@ def format_labels(option):
     return option
 
 
-model_names = ["decision_tree", "random_forest", "bagging", "naive_bayes", "svm", "logistic_regression", "knn",
-               "xgboost", "ridge"]
+model_names = ["random_forest", "svm", "knn"]
 model_option = st.selectbox(
     'What model do you want to use ?',
     model_names,
