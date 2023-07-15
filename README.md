@@ -1,6 +1,6 @@
 # AlbSL-Translator-Cloud
 
-AlbSL-Translator is a software application developed as a Graduation Project. It leverages the power of WebRTC, Twilio, and Streamlit to provide real-time translation of static Albanian Sign Language (AlbSL) hand signs into the 31 letters of the alphabet (excluding Ç, Ë, S, Sh and Z which are dynamic). The application captures camera frames and utilizes trained supervised machine learning classifiers and the MediaPipe Hands module for accurate hand detection.
+AlbSL-Translator is a software application developed as a Graduation Project. It leverages the power of WebRTC, Twilio, and Streamlit to provide real-time translation of static Albanian Sign Language (AlbSL) hand signs into the 31 letters of the alphabet (excluding Ç, Ë, S, Sh and Zh which are dynamic). The application captures camera frames and utilizes trained supervised machine learning classifiers and the MediaPipe Hands module for accurate hand detection.
 
 ![msedge_Dp6kF8xNjH](https://github.com/Thr33-of-a-Kind/AlbSL-Translator-Cloud/assets/78569367/107be23b-d469-4481-8076-d5a22b5a7a9f)
 
